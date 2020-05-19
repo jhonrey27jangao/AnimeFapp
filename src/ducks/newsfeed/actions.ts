@@ -58,3 +58,19 @@ export const updateComment = ({ commentId, postId, comment, userId }: any) => {
     userId,
   };
 };
+
+export const reportPost = ({ postId, userId }: any) => {
+  return {
+    type: types.REPORT_POST,
+    userId: userId,
+    postId: postId,
+  };
+};
+
+export const savePost = ({ postId, userId }: any) => {
+  return {
+    type: types.SAVE_POST,
+    userId: userId,
+    postId: postId,
+  };
+};

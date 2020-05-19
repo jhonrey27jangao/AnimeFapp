@@ -123,6 +123,31 @@ export const newsFeedReducer = (state: any = initialState, action: any) => {
       };
       localStorage.setItem("SocialMediaState", JSON.stringify(state));
       return state;
+    case types.REPORT_POST:
+      const toBeReported = state.posts.filter(
+        (post: any) => post.postId === action.postId
+      );
+
+      toBeReported[0].reported = [
+        ...toBeReported[0].reported,
+        {
+          userId: action.userId,
+        },
+      ];
+      localStorage.setItem("SocialMediaState", JSON.stringify(state));
+      return state;
+    case types.SAVE_POST:
+      const toBeSaved = state.accounts.filter(
+        (account: any) => account.userId === action.userId
+      );
+      toBeSaved[0].savedPost = [
+        ...toBeSaved[0].savedPost,
+        {
+          postId: action.postId,
+        },
+      ];
+      localStorage.setItem("SocialMediaState", JSON.stringify(state));
+      return state;
     default:
       return state;
   }

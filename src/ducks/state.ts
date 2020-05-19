@@ -20,6 +20,7 @@ const initialStateLocal = {
         },
       ],
       following: [],
+      savedPost: [],
     },
     {
       userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
@@ -38,6 +39,7 @@ const initialStateLocal = {
         },
       ],
       following: [],
+      savedPost: [],
     },
     {
       userId: "0d58b6ef-3881-4c89-94b8-a558e818ed17",
@@ -56,6 +58,7 @@ const initialStateLocal = {
         },
       ],
       following: [],
+      savedPost: [],
     },
     {
       userId: "0fefb03e-1eb6-451d-9e4d-9c0c8b0623ea",
@@ -74,6 +77,7 @@ const initialStateLocal = {
         },
       ],
       following: [],
+      savedPost: [],
     },
     {
       userId: "38e0145a-28cc-470b-84a9-ad6ad83114f7",
@@ -92,6 +96,7 @@ const initialStateLocal = {
         },
       ],
       following: [],
+      savedPost: [],
     },
     {
       userId: "6d8055cd-1f99-4b9c-be73-bae0a13d128a",
@@ -106,6 +111,7 @@ const initialStateLocal = {
         "https://i.pinimg.com/236x/7a/ab/3a/7aab3a7f13c13e7f0ae7397317ef082a.jpg",
       followers: [],
       following: [],
+      savedPost: [],
     },
   ],
   posts: [
@@ -129,6 +135,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
@@ -154,6 +161,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "b2e6d6e6-1cd2-480a-b482-4d499acc5062",
@@ -179,6 +187,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
@@ -204,6 +213,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "b2e6d6e6-1cd2-480a-b482-4d499acc5062",
@@ -224,6 +234,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "0d58b6ef-3881-4c89-94b8-a558e818ed17",
@@ -244,6 +255,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "0fefb03e-1eb6-451d-9e4d-9c0c8b0623ea",
@@ -264,6 +276,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "0d58b6ef-3881-4c89-94b8-a558e818ed17",
@@ -284,6 +297,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
     {
       userId: "0fefb03e-1eb6-451d-9e4d-9c0c8b0623ea",
@@ -304,6 +318,7 @@ const initialStateLocal = {
           userId: "dbb49617-b347-4385-8082-5c4946a4ac8e",
         },
       ],
+      reported: [],
     },
   ],
   errors: {

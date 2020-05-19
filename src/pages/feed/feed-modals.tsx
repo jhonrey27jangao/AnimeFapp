@@ -8,9 +8,35 @@ import {
 } from "./styles";
 import { Modal } from "../../components/modal";
 import { Button } from "../../components/buttons";
-import { updateComment } from "../../ducks/newsfeed/actions";
+import {
+  updateComment,
+  reportPost,
+  savePost,
+} from "../../ducks/newsfeed/actions";
 
 export const FeedOptionsModal = ({ showOptions, setShowOptions }: any) => {
+  const profileAccount: any = JSON.parse(localStorage.getItem("Auth") || "{}");
+  const user = profileAccount[0];
+  const dispatch = useDispatch();
+
+  const dispatchReportPost = useCallback(() => {
+    const data = {
+      postId: showOptions.postId,
+      userId: user.userId,
+    };
+    dispatch(reportPost(data));
+    setShowOptions();
+  }, [showOptions, user, dispatch, setShowOptions]);
+
+  const dispatchSavePost = useCallback(() => {
+    const data = {
+      postId: showOptions.postId,
+      userId: user.userId,
+    };
+    dispatch(savePost(data));
+    setShowOptions();
+  }, [showOptions, user, dispatch, setShowOptions]);
+
   const renderFeedOptionsModal = useCallback(() => {
     return (
       <Modal show={showOptions.showModal} onClose={setShowOptions}>
@@ -18,13 +44,15 @@ export const FeedOptionsModal = ({ showOptions, setShowOptions }: any) => {
           <li>
             <Link to={`/view-post/${showOptions.postId}`}>View Post</Link>
           </li>
-          <li>Save Post</li>
-          <li className="textRed">Report Post</li>
+          <li onClick={dispatchSavePost}>Save Post</li>
+          <li className="textRed" onClick={dispatchReportPost}>
+            Report Post
+          </li>
           <li className="textRed">Cancel</li>
         </StyledFeedOptionListContainer>
       </Modal>
     );
-  }, [showOptions, setShowOptions]);
+  }, [showOptions, setShowOptions, dispatchReportPost, dispatchSavePost]);
   return <>{renderFeedOptionsModal()}</>;
 };
 

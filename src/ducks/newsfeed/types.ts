@@ -5,3 +5,5 @@ export const UNFOLLOW_ACCOUNT = "UNFOLLOW_ACCOUNT";
 export const ADD_COMMENT = "ADD_COMMENT";
 export const DELETE_COMMENT = "DELETE_COMMENT";
 export const UPDATE_COMMENT = "UPDATE_COMMENT";
+export const REPORT_POST = "REPORT_POST";
+export const SAVE_POST = "SAVE_POST";
