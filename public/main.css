@@ -1,0 +1,13 @@
+/*
+preferences
+*/
+body {
+  font-size: 12px;
+  background: #f5f5f5;
+}
+
+.darkMode {
+  box-sizing: border-box;
+  background: #000 !important;
+  color: #fff !important;
+}

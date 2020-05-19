@@ -1,0 +1,7 @@
+export const LIKE_POST = "LIKE_POST";
+export const UNLIKE_POST = "UNLIKE_POST";
+export const FOLLOW_ACCOUNT = "FOLLOW_ACCOUNT";
+export const UNFOLLOW_ACCOUNT = "UNFOLLOW_ACCOUNT";
+export const ADD_COMMENT = "ADD_COMMENT";
+export const DELETE_COMMENT = "DELETE_COMMENT";
+export const UPDATE_COMMENT = "UPDATE_COMMENT";
